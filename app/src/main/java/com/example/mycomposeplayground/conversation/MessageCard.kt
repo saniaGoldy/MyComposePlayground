@@ -18,6 +18,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.mycomposeplayground.conversation.model.Message
+import com.example.mycomposeplayground.conversation.data.SampleData
 
 @Composable
 fun MessageCard(msg: Message) {

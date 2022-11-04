@@ -1,7 +1,9 @@
-import com.example.mycomposeplayground.Message
+package com.example.mycomposeplayground.conversation.data
+
+import com.example.mycomposeplayground.conversation.model.Message
 
 /**
- * SampleData for Jetpack Compose Tutorial 
+ * com.example.mycomposeplayground.conversation.data.SampleData for Jetpack Compose Tutorial
  */
 object SampleData {
     // Sample conversation data

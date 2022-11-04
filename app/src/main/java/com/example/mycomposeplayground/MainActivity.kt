@@ -1,17 +1,17 @@
 package com.example.mycomposeplayground
 
-import SampleData
+import com.example.mycomposeplayground.conversation.data.SampleData
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.mycomposeplayground.conversation.Conversation
 import com.example.mycomposeplayground.ui.theme.MyComposePlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,13 +28,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Conversation(messages: List<Message>) {
-    LazyColumn {
-        messages.map { item { MessageCard(it) } }
     }
 }
 
